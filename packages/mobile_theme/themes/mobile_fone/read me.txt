@@ -1,0 +1,11 @@
+This template creates web pages for smart phones like Android and iPhones. It shows how to style text and place graphics.
+
+This template is free, copyright 2011 Azalea Software, Inc. and is licensed under the Creative Commons Attribution 3.0 Unported License (CC BY 3.0) This means you can share, distribute, modify, mashup, remix, twist, and bend this template if you agree to include the following text, Fone:QRdvark, on your main page linked to www.QRdvark.com/templates We want you to use and change our template.
+
+This template is a demo subset of a larger template that shows how to style and format navigation elements, plays audio, and has pre-built pages for contact, FAQ pages, and techniques specific to building web sites for mobile phones.
+
+www.QRdvark.com/templates/
+
+Azalea Software, Inc.
+azalea@azalea.com
+

@@ -1,10 +1,10 @@
-<?php    
+<?php      
 defined('C5_EXECUTE') or die(_("Access Denied."));
 class MobileThemePackage extends Package {
 
 	protected $pkgHandle = 'mobile_theme';
 	protected $appVersionRequired = '5.4.1';
-	protected $pkgVersion = '1.0';
+	protected $pkgVersion = '1.0.3';
 	
 	public function getPackageName() {
 		return t("Mobile Theme Switcher");
@@ -28,11 +28,18 @@ class MobileThemePackage extends Package {
 	public function on_start() { 
 		if($_SESSION['mobile_theme_non_mobile'] != true) {
 			$pkg = Package::getByHandle($this->pkgHandle);
-			Events::extend('on_start',
+			Events::extend('on_page_view',
 				'MobileTheme',
 				'checkLoadTheme',
 				'packages/'.$this->pkgHandle.'/models/mobile_theme.php'
-				);
+			);
+			// this is the part that checks based on
+			// a GET value mobile=1
+			Events::extend('on_page_view',
+				'MobileTheme',
+				'changeOnMobileURI',
+				'packages/'.$this->pkgHandle.'/models/mobile_theme.php'
+			);
 		}
 	}
 	

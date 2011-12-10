@@ -1,5 +1,5 @@
-<? /* xml version="1.0" */ ?>
-<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php   /* xml version="1.0" */ ?>
+<?php   defined('C5_EXECUTE') or die("Access Denied."); ?>
 <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN"
 "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -17,8 +17,8 @@
 <meta http-equiv="cleartype" content="on" />
 <meta http-equiv="Cache-Control" content="no-cache" />
 
-<link href="<?=$this->getThemePath()?>/main.css" rel="stylesheet" type="text/css"/>
-<link href="<?=$this->getThemePath()?>/typography.css" rel="stylesheet" type="text/css" />
+<link href="<?php  echo $this->getThemePath()?>/main.css" rel="stylesheet" type="text/css"/>
+<link href="<?php  echo $this->getThemePath()?>/typography.css" rel="stylesheet" type="text/css" />
 
 <!--  the favicon & iOS home screen icon are both 57x57 PNG's. Use a full URL file path for Android devices.  -->
 <!--  <link rel="apple-touch-icon-precomposed" href="http://yoursite.com/apple-touch-icon.png"/>  -->
@@ -26,7 +26,7 @@
 <!--  make a site map for your mobile site, even if you have a computer browser site too.  www.xml-sitemaps.com  -->
 <!--  <link rel="alternate" type="application/rss+xml" title="ROR" href="ror.xml" /> -->
 
-<?php Loader::element('header_required'); ?>
+<?php   Loader::element('header_required'); ?>
 
 </head>
 
@@ -34,18 +34,18 @@
 
 <div class="content">
 	
-	<?php
+	<?php  
 	$u = new User;
 	if ($u->isLoggedIn ()) { ?>
 	<div style="padding-top:20px;"></div>
-	<?php  } ?>
+	<?php    } ?>
 
 	<div id="navButtons">
-		<?php
+		<?php  
 			$bt = BlockType::getByHandle('autonav');
 			$bt->controller->displayPages = 'top';
 			$bt->controller->orderBy = 'display_asc';
 			$bt->render('templates/header_menu'); 
 		?>
 	</div>
-	<p class="site-title"><a href="<?=$this->url('');?>"><?php echo SITE; ?></a></p>
+	<p class="site-title"><a href="<?php  echo $this->url('');?>"><?php   echo SITE; ?></a></p>

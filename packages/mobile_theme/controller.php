@@ -3,8 +3,8 @@ defined('C5_EXECUTE') or die(_("Access Denied."));
 class MobileThemePackage extends Package {
 
 	protected $pkgHandle = 'mobile_theme';
-	protected $appVersionRequired = '5.4.1';
-	protected $pkgVersion = '1.0.3';
+	protected $appVersionRequired = '5.5.0';
+	protected $pkgVersion = '1.1';
 	
 	public function getPackageName() {
 		return t("Mobile Theme Switcher");

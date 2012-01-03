@@ -1,8 +1,8 @@
-<?php   defined('C5_EXECUTE') or die(_("Access Denied.")); ?>
-<h1><span><?php   echo t('Mobile Options');?></span></h1>
-<div class="ccm-dashboard-inner">
-	<form method="post" action="<?php   echo $this->action('save');?>">
-	<span><strong><?php  echo  t('Select theme for mobile browsing');?>:</strong></span>
+<?php defined('C5_EXECUTE') or die(_("Access Denied.")); ?>
+<?=Loader::helper('concrete/dashboard')->getDashboardPaneHeaderWrapper(t('Mobile Options'), false, false, false);?>
+<form method="post" action="<?php   echo $this->action('save');?>">
+<div class="ccm-pane-body">
+	<h3><?php  echo  t('Select theme for mobile browsing');?>:</h3>
 	<table border="0" cellspacing="0" cellpadding="0" id="ccm-template-list">
 	<?php   
 	if (count($tArray) == 0) { ?>
@@ -24,7 +24,9 @@
 		<?php    }
 	} ?>
 	</table> 
-	<?php   print $concrete_interface->submit(t('Save'), t('Save')); ?>
-	<div class="ccm-spacer"></div>
-	</form>	
 </div>
+<div class="ccm-pane-footer">
+	<?php echo $concrete_interface->submit(t('Save'),'Save','right', 'primary')?>
+</div>
+</form>	
+<?=Loader::helper('concrete/dashboard')->getDashboardPaneFooterWrapper(false);?>

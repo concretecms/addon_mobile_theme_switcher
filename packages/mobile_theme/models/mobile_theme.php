@@ -25,6 +25,7 @@ class MobileTheme {
 			if($mobileTheme instanceof PageTheme) {
 				$view->setTheme($mobileTheme);
 			}
+			$view->addHeaderItem(Loader::helper('html')->css('ccm.app.mobile.css','mobile_theme'));
 		}
 	}
 	

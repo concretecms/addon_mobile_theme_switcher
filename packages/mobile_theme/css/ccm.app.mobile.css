@@ -1,0 +1,3 @@
+@CHARSET "UTF-8";
+/* hide search box and dashboard link */
+#ccm-page-controls-wrapper #ccm-nav-dashboard, #ccm-page-controls-wrapper #ccm-nav-intelligent-search { display: none; }

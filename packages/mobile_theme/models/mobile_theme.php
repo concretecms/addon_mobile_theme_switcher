@@ -41,6 +41,7 @@ class MobileTheme {
 				$view = View::getInstance();
 				$view->setTheme($mobileTheme);
 			}
+			$view->addHeaderItem(Loader::helper('html')->css('ccm.app.mobile.css','mobile_theme'));
 		}
 	}
 

@@ -10,8 +10,7 @@ if(isset($_COOKIE['mobile_theme_non_mobile']) && $_COOKIE['mobile_theme_non_mobi
 }
 
 if($_REQUEST['rcID']) {
-	$c = Page::getByID($_REQUEST['rcID']);
-	$path = View::url($c->getCollectionPath());
+	$path = NavigationHelper::getLinkToCollection(Page::getByID($_REQUEST['rcID']), true);
 } else {
 	$path = View::url('/');
 }

@@ -4,7 +4,7 @@ class MobileThemePackage extends Package {
 
 	protected $pkgHandle = 'mobile_theme';
 	protected $appVersionRequired = '5.5.0';
-	protected $pkgVersion = '1.1';
+	protected $pkgVersion = '1.2';
 	
 	public function getPackageName() {
 		return t("Mobile Theme Switcher");

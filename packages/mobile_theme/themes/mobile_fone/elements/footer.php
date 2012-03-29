@@ -26,5 +26,6 @@ $non_mobile_url = $concrete_urls->getToolsURL('non_mobile', 'mobile_theme').($c 
 </div>
 
 </div>
+<?php Loader::element('footer_required'); ?>
 </body>
 </html>

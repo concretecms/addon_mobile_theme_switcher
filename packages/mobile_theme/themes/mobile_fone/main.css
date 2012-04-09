@@ -8,80 +8,17 @@
 }
 body {
 	background-color:#FFF;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 90%;
-	line-height: 145%;
-	color: #000;
 	margin: 0px;
 	padding: 0px;
 	background: url("images/bg.jpg") repeat-x scroll 0 -125px transparent;
-}
-.site-title {
-	font-size: 24pt;
-	font-weight: bold;
-	padding-left: 10px;
-	padding-top: 20px;
-	text-indent: -10px;
-	color: #000;
-	text-shadow: 0 1px 3px #FFF;
-	text-transform: capitalize;
 }
 .content {
 	padding: 0px;
 	color: #000;
 	margin: 10px;
 }
-
-h1 {
-	font-size: 15pt;
-	font-weight: bold;
-	color: #000;
-	padding-top: 20px;
-	text-shadow: 0 1px 3px #FFF;
-	text-transform: capitalize;
-}
-
-h2 {
-	font-size: 12pt;
-	font-weight: bold;
-	color: #000;
-	text-shadow: 0 1px 3px #FFF;
-	text-transform: capitalize;
-}
-
-/* 
-.hangingHead {
-	font-size: 15pt;
-	font-weight: bold;
-	padding-left: 10px;
-	padding-top: 50px;
-	text-indent: -10px;
-	color: #000;
-	text-shadow: 0 1px 3px #FFF;
-	text-transform: capitalize;
-}
-.hangingSubhead {
-	font-size: 110%;
-	padding-left:10px;
-	text-indent: -10px;
-	font-weight: bold;
-	color:#000;
-	text-transform: capitalize;
-}
-
-*/
-.caption {
-	font-weight: bold;
-}
-
-p {
-	padding: 2px 10px;
-	margin: 5px 0;;
-}
 .footer {
 	padding: 10px;
-	line-height: 175%;
-	font-size: 80%;
 	background: url("images/bg.jpg") repeat-x scroll 0 -173px transparent;
 	margin:0 -10px;
 	text-align: center;
@@ -98,70 +35,4 @@ p {
 	float: left;
 	margin:15px;
 	clear: both;
-}
-a {
-	text-decoration: none;
-}
-a:link {
-	color: #1567c0;
-}
-a:visited {
-	color: #1c907c;
-}
-a:active {
-	color: #72aee9;
-}
-a:hover  {
-	color: #0033cc;
-}
-#menu ul {
-	list-style: none;
-	margin: 10px;
-	padding: 0;
-	text-align: center;
-}
-#menu ul li a {
-	background-color: #F3F3F3;
-	color: #000;
-	border: 1px solid #999;
-	display: block;
-	font-weight: bold;
-	margin-bottom: -1px;
-	padding: 6px 4px;
-}
-#menu ul li:first-child a {
-	-webkit-border-top-left-radius: 8px;
-	-webkit-border-top-right-radius: 8px;
-}
-#menu ul li:last-child a {
-	-webkit-border-bottom-left-radius: 8px;
-	-webkit-border-bottom-right-radius: 8px;
-}
-#navButtons ul {
-	float: left;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-}
-#navButtons ul li {
-	display: inline;
-	margin:0px;
-	padding:0px;
-}
-#navButtons ul a {
-	float: left;
-	width: auto;
-	text-decoration: none;
-	color: #121110;
-	padding:0 10px;
-	color: #003;
-	line-height: 35px;
-	font-size: 17px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-#navButtons ul a:hover {
-	-webkit-border-radius: 5px;
-	background-color: #FFF;
 }

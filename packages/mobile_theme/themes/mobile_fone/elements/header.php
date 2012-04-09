@@ -18,7 +18,7 @@
 <meta http-equiv="Cache-Control" content="no-cache" />
 
 <link href="<?php  echo $this->getThemePath()?>/main.css" rel="stylesheet" type="text/css"/>
-<link href="<?php  echo $this->getThemePath()?>/typography.css" rel="stylesheet" type="text/css" />
+<link href="<?php  echo $this->getStyleSheet('typography.css')?>" rel="stylesheet" type="text/css" />
 
 <!--  the favicon & iOS home screen icon are both 57x57 PNG's. Use a full URL file path for Android devices.  -->
 <!--  <link rel="apple-touch-icon-precomposed" href="http://yoursite.com/apple-touch-icon.png"/>  -->

@@ -1,2 +1,8 @@
+1.2 
+	- minor fixes to included mobile fone theme.
+	- fixed redirect to ?mobile so it no longer interferes with form posts
+	- excluded ipads from mobile theme
+	
 1.1 - Updated Dashboard UI for 5.5, changed browser detect to use a more thorough regular expression 
+
 1.0 - Initial Release

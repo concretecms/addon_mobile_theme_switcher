@@ -33,13 +33,6 @@ class MobileThemePackage extends Package {
 				'checkLoadTheme',
 				'packages/'.$this->pkgHandle.'/models/mobile_theme.php'
 			);
-			// this is the part that checks based on
-			// a GET value mobile=1
-			Events::extend('on_page_view',
-				'MobileTheme',
-				'changeOnMobileURI',
-				'packages/'.$this->pkgHandle.'/models/mobile_theme.php'
-			);
 		}
 	}
 	
